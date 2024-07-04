@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "leven": "^4.0.0",
+    "mathjs": "^13.0.1",
+    "nodemailer": "^6.9.14",
+    "readline-sync": "^1.4.10"
+  }
+}
