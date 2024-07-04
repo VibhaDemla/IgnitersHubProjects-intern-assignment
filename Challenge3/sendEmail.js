@@ -1,9 +1,9 @@
 const nodemailer = require('nodemailer');
 const fs = require('fs');
 
-
-const myEmail = 'vidhidemla18@gmail.com';
-const myPassword = 'jxyw iouf wjmf xliy  ';     //app specific password
+//here I used my email, password and send email to hr@ignitershub.com , for security reasons I am hiding this password if you want to test this code ,kindly add your Email id and password
+const myEmail = 'vibhademla@gmail.com';
+//const myPassword = '';     //app specific password
 
 //object that handles sending of the email ,configured with gmail service and sender's details
 let transporter = nodemailer.createTransport({
@@ -21,7 +21,7 @@ const sendEmail = async () => {
       from: myEmail,
       to: 'hr@ignitershub.com',
       subject: 'Challenge 3 Completed',
-      text: 'Name: Vibha\nSemester: 4th\nBranch:Computer Science\nRoll Number: 202201051',
+      text: 'Name: Vibha\nSemester: 4th\nBranch:Computer Science\nRoll Number: 202201051\nGithub Repo: https://github.com/VibhaDemla/IgnitersHubProjects-intern-assignment',
       attachments: [
         {
           filename: 'VD_Photo.jpeg',
